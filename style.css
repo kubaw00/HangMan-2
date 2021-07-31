@@ -1,0 +1,73 @@
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(242, 242, 255), rgb(111, 111, 252));
+}
+
+#hangman {
+    width: 800px;
+    margin: 30px auto;
+}
+
+#word {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    padding: 30px 20px;
+    border: 3px black solid;
+    text-align: center;
+}
+
+#letters {
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#letters button {
+    width: 32px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(161, 161, 161);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#letters button:disabled {
+    background-color: rgb(73, 73, 73);
+}
+
+#output {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#output .step {
+    width: calc(100% / 8);
+    padding: 5px;
+
+}
+
+#output .step {
+    opacity: 0.1;
+}
+
+#output .step img {
+    width: 100%;
+}
+
+#category {
+    text-align: center;
+    padding: 30px 0px;
+    text-transform: uppercase;
+}
